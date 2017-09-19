@@ -1,13 +1,23 @@
 /*General Styles*/
 body {
   display: flex;
+  
 }
-
+.main-content{
+  background-image: url("Scrolled_Old_Picture.png");
+  background-size: 80% 100%;
+  background-repeat: no-repeat;
+}
+.side-panel
+{
+  width: 20%;
+}
 .column {
   flex-direction: column;
 }
 
 .row {
+  display: flex;
   flex-direction: row;
 }
 
