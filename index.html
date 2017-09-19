@@ -5,36 +5,60 @@
     </head>
     <body>
         <div class="side-panel">
-            
+
         </div>
         <div class="main-content">
             <div class="header">
                 <input class="text" type="text" placeholder="Character Name">
                 <form action="/action_page.php">
-                    <select name="">
+                    <select name="race">
                         <option value="dwarf">Dwarf</option>
                         <option value="elf">Elf</option>
                         <option value="gnome">Gnome</option>
                         <option value="half-elf">Half-Elf</option>
                         <option value="halfling">Halfling</option>
                         <option value="half-orc">Half-Orc</option>
-                        <option value="human">Human</option>                    
+                        <option value="human">Human</option>
                     </select>
                         <br><br>
-                        <input type="submit">
+                    <input type="submit">
                 </form>
-                <!-- dropdown with races (Dwarf, Elf, Gnome, Half-elf, Halfling, Half-orc, Human) -->               
+                <!-- dropdown with races (Dwarf, Elf, Gnome, Half-elf, Halfling, Half-orc, Human) -->
                 <!-- dropdown with classes (Barbarian, Bard, Cleric, Druid, Fighter, Monk, Paladin, Ranger, Rogue, Sorcerer, Wizard) -->
+                <form action="/action_page.php">
+                    <select name="class">
+                      <option value="Barbarian">Barbarian</option>
+                      <option value="Bard">Bard</option>
+                      <option value="Fighter">Fighter</option>
+                      <option value="Cleric">Cleric</option>
+                      <option value="Druid">Druid</option>
+                      <option value="Monk">Monk</option>
+                      <option value="Paladin">Paladin</option>
+                      <option value="Ranger">Ranger</option>
+                      <option value="Rouge">Rouge</option>
+                      <option value="Sorcerer">Sorcerer</option>
+                      <option value="Wizard">Wizard</option>
+                    </select>
+                        <br><br>
+                    <input type="submit">
+                </form>
+                <input class="stat" name="level" type="text" placeholder="lvl">
             </div>
             <div class="stats">
 
             </div>
             <div class="hp-ac">
-                <input class="stat ac" type="text" placeholder="AC" >
-                <input class="stat hp" type="text" placeholder="HP">
-                <!-- bar that coordinates with the ammount of HP remaining -->
+                <label for="ac">AC</label>
+                <input class="stat ac" type="text" name="ac">
+                <label for="hp">HP</label>
+                <input class="stat hp" type="text" name="hp">
+                <div class="hp-bar-empty">
+                  <div class="hp-bar-full"></div>
+                </div>
+                <!-- bar that coordinates with the ammount ob HP remaining -->
             </div>
             <div class="skills">
+                <h3>Skills</h3>
                 <label for="max-pts">Max Pts</label>
                 <input class="stat" type="text" name="max-pts">
                 <label for="points-per-level">Points/Lvl</label>
