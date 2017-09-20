@@ -4,7 +4,7 @@ body {
   
 }
 .main-content{
-  background-image: url("Scrolled_Old_Picture.png");
+  background-image: url("assets/Scrolled_Old_Picture.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
