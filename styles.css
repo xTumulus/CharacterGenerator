@@ -1,18 +1,10 @@
 /*General Styles*/
 body {
-  display: flex;
-  
+  margin: 0px;
 }
-.main-content{
-  background-image: url("assets/Scrolled_Old_Picture.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-.side-panel
-{
-  width: 20%;
-}
+
 .column {
+  display: flex;
   flex-direction: column;
 }
 
@@ -22,7 +14,33 @@ body {
 }
 
 /*Specific Element Styles*/
-.hp-bar-empty{
+.page-header {
+  background-color: blue;
+  height: 100px;
+  color: grey;
+}
+
+.header-img {
+  height: 98px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.side-panel {
+  width: 20%;
+}
+
+.main-content {
+  background-image: url("assets/Scrolled_Old_Picture.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.sheet-header {
+
+}
+
+.hp-bar-empty {
   width: 200px;
   height: 50px;
   border: 3px solid black;
@@ -42,6 +60,7 @@ body {
 .skills {
   border: 3px solid black;
 }
+
 .items{
   border: 3px solid black;
 }
