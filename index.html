@@ -4,10 +4,15 @@
         <script type="text/javascript" src="scripts.js"></script>
     </head>
     <body>
-        <div class="side-panel column">
-        Character Names
+      <div class="column">
+        <div class="header">
+
         </div>
-        <div class="main-content">
+        <div class="row">
+          <div class="side-panel column">
+            Character Names
+          </div>
+          <div class="main-content">
             <div class="header row">
                 <input class="text" type="text" placeholder="Character Name">
                 <form action="/action_page.php">
@@ -41,39 +46,40 @@
                 <input class="stat" name="level" type="text" placeholder="lvl">
             </div>
             <div class="stats">
-                
+
             </div>
             <div class="hp-ac">
                 <label for="ac">AC</label>
-                <input class="stat ac" type="text" name="ac">
+                  <input class="stat ac" type="text" name="ac">
                 <label for="hp">HP</label>
-                <input class="stat hp" type="text" name="hp">
-                <div class="hp-bar-empty">
-                    <div class="hp-bar-full"></div>
-                </div>
+                  <input class="stat hp" type="text" name="hp">
+                <!-- <div class="hp-bar-empty">
+                  <div class="hp-bar-full"></div>
+                </div> -->
             </div>
             <div class="skills">
-                <h3>Skills</h3>
-                <label for="max-pts">Max Pts</label>
-                <input class="stat" type="text" name="max-pts">
-                <label for="points-per-level">Points/Lvl</label>
-                <input class="stat" type="text" name="points-per-level">
-                <label for="total-pts">Total Points</label>
-                <input class="stat" type="text" name="total-points">
-                <!-- two column table with stat and skill value
-                    populates the right col based on class
-                    populates left col with non-class
-                    make the default bonus populate from stats
-                    have a total points calculator?
-                -->
-            </div>
-            <!-- bar that coordinates with the ammount of HP remaining -->
-            <div class="items">
-              <h3>Items</h3>
-              <div id="items-list">
-                <input type="text" name="item name">
+                  <h3>Skills</h3>
+                  <label for="max-pts">Max Pts</label>
+                  <input class="stat" type="text" name="max-pts">
+                  <label for="points-per-level">Points/Lvl</label>
+                  <input class="stat" type="text" name="points-per-level">
+                  <label for="total-pts">Total Points</label>
+                  <input class="stat" type="text" name="total-points">
+                  <!-- two column table with stat and skill value
+                      populates the right col based on class
+                      populates left col with non-class
+                      make the default bonus populate from stats
+                      have a total points calculator?
+                  -->
               </div>
-            </div>
+            <div class="items">
+                <h3>Items</h3>
+                <div id="items-list">
+                  <input type="text" name="item name">
+                </div>
+              </div>
+          </div>
         </div>
+      </div>
     </body>
 </html>
