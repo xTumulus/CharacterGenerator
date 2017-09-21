@@ -1,6 +1,7 @@
 /*General Styles*/
 body {
   margin: 0px;
+  font-family: 'Bilbo', cursive;
 }
 
 .column {
@@ -11,6 +12,10 @@ body {
 .row {
   display: flex;
   flex-direction: row;
+}
+
+.stat {
+  width: 35px;
 }
 
 /*Specific Element Styles*/
@@ -31,6 +36,9 @@ body {
 }
 
 .main-content {
+  padding: 15%;
+  width: 75%;
+  height: 100%;
   background-image: url("assets/Scrolled_Old_Picture.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
