@@ -16,6 +16,12 @@ body {
 
 .stat {
   width: 35px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+label {
+  margin-right: 10px;
 }
 
 /*Specific Element Styles*/
@@ -44,8 +50,17 @@ body {
   background-repeat: no-repeat;
 }
 
+.cell-title {
+    margin-top: 0px;
+    margin-right: 25px;
+}
+
 .sheet-header {
 
+}
+
+.hp-ac {
+  margin: 10px;  
 }
 
 .hp-bar-empty {
@@ -66,7 +81,13 @@ body {
 }
 
 .skills {
+  padding: 8px;
+  width: 58%;
   border: 3px solid black;
+}
+
+.skill {
+  width: 100px;
 }
 
 .items{
