@@ -2,6 +2,11 @@
 body {
   margin: 0px;
   font-family: 'Bilbo', cursive;
+  background: url('assets/leather.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .column {
@@ -21,7 +26,14 @@ body {
 }
 
 label {
+  font-weight: bold;
+  font-size: 1.2em;
   margin-right: 10px;
+}
+
+label.primary {
+  font-family: 'Berkshire Swash', cursive;
+  /*font-family: 'Trade Winds', cursive;*/
 }
 
 select {
@@ -31,15 +43,18 @@ select {
 }
 
 .cell-title {
+    font-family: 'Berkshire Swash', cursive;
+    /*font-family: 'Trade Winds', cursive;*/
     margin-top: 0px;
     margin-right: 25px;
 }
 
 /*Specific Element Styles*/
 .page-header {
+  font-family: 'Berkshire Swash', cursive;
   background-color: blue;
   height: 100px;
-  color: grey;
+  color: black;
 }
 
 .header-img {
@@ -51,7 +66,6 @@ select {
 .side-panel {
   width: 20%;
 }
-
 
 .main-content {
   padding: 8% 15% 6% 11%;
@@ -90,6 +104,7 @@ select {
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: -90px;
+  font-size: .8em;
 }
 
 .hp-bar-empty {

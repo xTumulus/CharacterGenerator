@@ -2,12 +2,13 @@
     <head>
         <link rel="stylesheet" href="styles.css">
         <script type="text/javascript" src="scripts.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Bilbo" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Bilbo|Trade+Winds" rel="stylesheet">
     </head>
     <body>
       <div class="column">
-        <div class="header">
-
+        <div class="page-header row">
+          <img class="header-img" src="./assets/dragon.png" alt="dragon silhouette" height="50px">
+          <h1>Dungeon and Dragons Character Generator</h1>
         </div>
         <div class="row">
           <div class="side-panel column">
@@ -56,11 +57,11 @@
               </div>
               <div class="column">
                 <div class="hp-ac">
-                  <label for="ac">AC</label>
+                  <label for="ac" class="primary">AC</label>
                   <input class="stat ac" type="text" name="ac">
-                  <label for="max-hp">Max HP</label>
+                  <label for="max-hp" class="primary">Max HP</label>
                   <input class="stat max-hp" type="text" name="max-hp">
-                  <label for="hp">HP</label>
+                  <label for="hp" class="primary">HP</label>
                   <input class="stat hp" type="text" name="hp">
                   <!-- <div class="hp-bar-empty">
                   <div class="hp-bar-full"></div>
