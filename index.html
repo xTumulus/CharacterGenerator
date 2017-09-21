@@ -50,20 +50,24 @@
                 <input class="header-input align" name="align" type="text">
               </div>
             </div>
-            <div class="stats">
+            <div class="row player-stats">
+              <div class="main-stats">
 
-            </div>
-            <div class="hp-ac">
-                <label for="ac">AC</label>
+              </div>
+              <div class="column">
+                <div class="hp-ac">
+                  <label for="ac">AC</label>
                   <input class="stat ac" type="text" name="ac">
-                <label for="hp">HP</label>
+                  <label for="max-hp">Max HP</label>
+                  <input class="stat max-hp" type="text" name="max-hp">
+                  <label for="hp">HP</label>
                   <input class="stat hp" type="text" name="hp">
-                <!-- <div class="hp-bar-empty">
+                  <!-- <div class="hp-bar-empty">
                   <div class="hp-bar-full"></div>
                 </div> -->
-            </div>
-            <div class="skills">
-              <div class="row">
+                </div>
+                <div class="skills">
+                <div class="row">
                   <h3 class="cell-title">Skills</h3>
                   <label for="max-pts">Max Pts</label>
                   <input class="stat" type="text" name="max-pts">
@@ -71,124 +75,126 @@
                   <input class="stat" type="text" name="points-per-level">
                   <label for="total-pts">Total Points</label>
                   <input class="stat" type="text" name="total-points">
+                </div>
+                <table>
+                  <tr>
+                    <th>Skill</th>
+                    <th>Score</th>
+                    <th>Skill</th>
+                    <th>Score</th>
+                    <th>Skill</th>
+                    <th>Score</th>
+                  </tr>
+                  <tr>
+                    <td class="skill">Appraise</td>
+                    <td><input class="stat" type="text"></td>
+                    <td class="skill">Handle Animal</td>
+                    <td><input class="stat" type="text"></td>
+                    <td class="skill">Sense Motive</td>
+                    <td><input class="stat" type="text"></td>
+                  </tr>
+                  <tr>
+                    <td class="skill">Balance</td>
+                    <td><input class="stat" type="text"></td>
+                    <td class="skill">Heal</td>
+                    <td><input class="stat" type="text"></td>
+                    <td class="skill">Sleight of Hand</td>
+                    <td><input class="stat" type="text"></td>
+                  </tr>
+                  <tr>
+                    <td class="skill">Bluff</td>
+                    <td><input class="stat" type="text"></td>
+                    <td class="skill">Hide</td>
+                    <td><input class="stat" type="text"></td>
+                    <td class="skill">Spellcraft</td>
+                    <td><input class="stat" type="text"></td>
+                  </tr>
+                  <tr>
+                    <td class="skill">Climb</td>
+                    <td><input class="stat" type="text"></td>
+                    <td class="skill">Intimidate</td>
+                    <td><input class="stat" type="text"></td>
+                    <td class="skill">Spot</td>
+                    <td><input class="stat" type="text"></td>
+                  </tr>
+                  <tr>
+                    <td class="skill">Concentration</td>
+                    <td><input class="stat" type="text"></td>
+                    <td class="skill">Jump</td>
+                    <td><input class="stat" type="text"></td>
+                    <td class="skill">Survival</td>
+                    <td><input class="stat" type="text"></td>
+                  </tr>
+                  <tr>
+                    <td class="skill">Craft</td>
+                    <td><input class="stat" type="text"></td>
+                    <td class="skill">Knowledge</td>
+                    <td><input class="stat" type="text"></td>
+                    <td class="skill">Swim</td>
+                    <td><input class="stat" type="text"></td>
+                  </tr>
+                  <tr>
+                    <td class="skill">Decipher Script</td>
+                    <td><input class="stat" type="text"></td>
+                    <td class="skill">Listen</td>
+                    <td><input class="stat" type="text"></td>
+                    <td class="skill">Tumble</td>
+                    <td><input class="stat" type="text"></td>
+                  </tr>
+                  <tr>
+                    <td class="skill">Diplomacy</td>
+                    <td><input class="stat" type="text"></td>
+                    <td class="skill">Move Silently</td>
+                    <td><input class="stat" type="text"></td>
+                    <td class="skill">Use Magic Device</td>
+                    <td><input class="stat" type="text"></td>
+                  </tr>
+                  <tr>
+                    <td class="skill">Disable Device</td>
+                    <td><input class="stat" type="text"></td>
+                    <td class="skill">Open Lock</td>
+                    <td><input class="stat" type="text"></td>
+                    <td class="skill">Use Rope</td>
+                    <td><input class="stat" type="text"></td>
+                  </tr>
+                  <tr>
+                    <td class="skill">Disguise</td>
+                    <td><input class="stat" type="text"></td>
+                    <td class="skill">Perform</td>
+                    <td><input class="stat" type="text"></td>
+                    <td><input class="skill" type="text"></td>
+                    <td><input class="stat" type="text"></td>
+                  </tr>
+                  <tr>
+                    <td class="skill">Escape Artist</td>
+                    <td><input class="stat" type="text"></td>
+                    <td class="skill">Profession</td>
+                    <td><input class="stat" type="text"></td>
+                    <td><input class="skill" type="text"></td>
+                    <td><input class="stat" type="text"></td>
+                  </tr>
+                  <tr>
+                    <td class="skill">Forgery</td>
+                    <td><input class="stat" type="text"></td>
+                    <td class="skill">Ride</td>
+                    <td><input class="stat" type="text"></td>
+                    <td><input type="text" class="skill"></td>
+                    <td><input class="stat" type="text"></td>
+                  </tr>
+                  <tr>
+                    <td class="skill">Gather Information</td>
+                    <td><input class="stat" type="text"></td>
+                    <td class="skill">Search</td>
+                    <td><input class="stat" type="text"></td>
+                    <td><input class="skill" type="text"></td>
+                    <td><input class="stat" type="text"></td>
+                  </tr>
+                </table>
               </div>
-              <table>
-                <tr>
-                  <th>Skill</th>
-                  <th>Score</th>
-                  <th>Skill</th>
-                  <th>Score</th>
-                  <th>Skill</th>
-                  <th>Score</th>
-                </tr>
-                <tr>
-                  <td class="skill">Appraise</td>
-                  <td><input class="stat" type="text"></td>
-                  <td class="skill">Handle Animal</td>
-                  <td><input class="stat" type="text"></td>
-                  <td class="skill">Sense Motive</td>
-                  <td><input class="stat" type="text"></td>
-                </tr>
-                <tr>
-                  <td class="skill">Balance</td>
-                  <td><input class="stat" type="text"></td>
-                  <td class="skill">Heal</td>
-                  <td><input class="stat" type="text"></td>
-                  <td class="skill">Sleight of Hand</td>
-                  <td><input class="stat" type="text"></td>
-                </tr>
-                <tr>
-                  <td class="skill">Bluff</td>
-                  <td><input class="stat" type="text"></td>
-                  <td class="skill">Hide</td>
-                  <td><input class="stat" type="text"></td>
-                  <td class="skill">Spellcraft</td>
-                  <td><input class="stat" type="text"></td>
-                </tr>
-                <tr>
-                  <td class="skill">Climb</td>
-                  <td><input class="stat" type="text"></td>
-                  <td class="skill">Intimidate</td>
-                  <td><input class="stat" type="text"></td>
-                  <td class="skill">Spot</td>
-                  <td><input class="stat" type="text"></td>
-                </tr>
-                <tr>
-                  <td class="skill">Concentration</td>
-                  <td><input class="stat" type="text"></td>
-                  <td class="skill">Jump</td>
-                  <td><input class="stat" type="text"></td>
-                  <td class="skill">Survival</td>
-                  <td><input class="stat" type="text"></td>
-                </tr>
-                <tr>
-                  <td class="skill">Craft</td>
-                  <td><input class="stat" type="text"></td>
-                  <td class="skill">Knowledge</td>
-                  <td><input class="stat" type="text"></td>
-                  <td class="skill">Swim</td>
-                  <td><input class="stat" type="text"></td>
-                </tr>
-                <tr>
-                  <td class="skill">Decipher Script</td>
-                  <td><input class="stat" type="text"></td>
-                  <td class="skill">Listen</td>
-                  <td><input class="stat" type="text"></td>
-                  <td class="skill">Tumble</td>
-                  <td><input class="stat" type="text"></td>
-                </tr>
-                <tr>
-                  <td class="skill">Diplomacy</td>
-                  <td><input class="stat" type="text"></td>
-                  <td class="skill">Move Silently</td>
-                  <td><input class="stat" type="text"></td>
-                  <td class="skill">Use Magic Device</td>
-                  <td><input class="stat" type="text"></td>
-                </tr>
-                <tr>
-                  <td class="skill">Disable Device</td>
-                  <td><input class="stat" type="text"></td>
-                  <td class="skill">Open Lock</td>
-                  <td><input class="stat" type="text"></td>
-                  <td class="skill">Use Rope</td>
-                  <td><input class="stat" type="text"></td>
-                </tr>
-                <tr>
-                  <td class="skill">Disguise</td>
-                  <td><input class="stat" type="text"></td>
-                  <td class="skill">Perform</td>
-                  <td><input class="stat" type="text"></td>
-                  <td><input class="skill" type="text"></td>
-                  <td><input class="stat" type="text"></td>
-                </tr>
-                <tr>
-                  <td class="skill">Escape Artist</td>
-                  <td><input class="stat" type="text"></td>
-                  <td class="skill">Profession</td>
-                  <td><input class="stat" type="text"></td>
-                  <td><input class="skill" type="text"></td>
-                  <td><input class="stat" type="text"></td>
-                </tr>
-                <tr>
-                  <td class="skill">Forgery</td>
-                  <td><input class="stat" type="text"></td>
-                  <td class="skill">Ride</td>
-                  <td><input class="stat" type="text"></td>
-                  <td><input type="text" class="skill"></td>
-                  <td><input class="stat" type="text"></td>
-                </tr>
-                <tr>
-                  <td class="skill">Gather Information</td>
-                  <td><input class="stat" type="text"></td>
-                  <td class="skill">Search</td>
-                  <td><input class="stat" type="text"></td>
-                  <td><input class="skill" type="text"></td>
-                  <td><input class="stat" type="text"></td>
-                </tr>
-              </table>
+              </div>
             </div>
             <div class="items">
-                <h3>Items</h3>
+                <h3 class="cell-title">Items</h3>
                 <div class="row">
                   <h5>Item Name</h5>
                   <h5>Weight</h5>
