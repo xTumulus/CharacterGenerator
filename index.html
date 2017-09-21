@@ -5,16 +5,15 @@
     </head>
     <body>
       <div class="column">
-        <div class="page-header row">
-          <img class="header-img" src="./assets/dragon.png" alt="dragon silhouette" height="50px">
-          <h1>Dungeon and Dragons Character Generator</h1>
+        <div class="header">
+
         </div>
         <div class="row">
           <div class="side-panel column">
             Character Names
           </div>
           <div class="main-content">
-            <div class="sheet-header row">
+            <div class="header row">
                 <input class="text" type="text" placeholder="Character Name">
                 <form action="/action_page.php">
                     <select name="race">
@@ -75,8 +74,18 @@
               </div>
             <div class="items">
                 <h3>Items</h3>
+                <div class="row">
+                  <h5>Item Name</h5>
+                  <h5>Weight</h5>
+                  <h5>Quantity</h5>
+                </div>
                 <div id="items-list">
-                  <input type="text" name="item name">
+                  <div class="row">
+                  <input type="text" name="item name" placeholder="Name">
+                  <input type="text" name="weight" placeholder="0">
+                  <input type="text" name="quantity" placeholder="1">
+                  <button type="button" name="button">Add item</button>
+                  </div>
                 </div>
               </div>
           </div>
