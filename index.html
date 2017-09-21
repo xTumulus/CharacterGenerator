@@ -15,36 +15,40 @@
           </div>
           <div class="main-content">
             <div class="header row">
-                <input class="text" type="text" placeholder="Character Name">
-                <form action="/action_page.php">
-                    <select name="race">
-                        <option value="dwarf">Dwarf</option>
-                        <option value="elf">Elf</option>
-                        <option value="gnome">Gnome</option>
-                        <option value="half-elf">Half-Elf</option>
-                        <option value="halfling">Halfling</option>
-                        <option value="half-orc">Half-Orc</option>
-                        <option value="human">Human</option>
-                    </select>
-                    <!-- <input type="submit"> -->
-                </form>
-                <form action="/action_page.php">
-                    <select name="class">
-                      <option value="Barbarian">Barbarian</option>
-                      <option value="Bard">Bard</option>
-                      <option value="Fighter">Fighter</option>
-                      <option value="Cleric">Cleric</option>
-                      <option value="Druid">Druid</option>
-                      <option value="Monk">Monk</option>
-                      <option value="Paladin">Paladin</option>
-                      <option value="Ranger">Ranger</option>
-                      <option value="Rouge">Rouge</option>
-                      <option value="Sorcerer">Sorcerer</option>
-                      <option value="Wizard">Wizard</option>
-                    </select>
-                    <!-- <input type="submit"> -->
-                </form>
-                <input class="stat" name="level" type="text" placeholder="lvl">
+              <div class="column">
+                <label for="name">Character Name</label>
+                <input class="header-input name" name="align" type="text">
+              </div>
+              <select name="race">
+                <option value="dwarf">Dwarf</option>
+                <option value="elf">Elf</option>
+                <option value="gnome">Gnome</option>
+                <option value="half-elf">Half-Elf</option>
+                <option value="halfling">Halfling</option>
+                <option value="half-orc">Half-Orc</option>
+                <option value="human">Human</option>
+              </select>
+              <select name="class">
+                <option value="Barbarian">Barbarian</option>
+                <option value="Bard">Bard</option>
+                <option value="Fighter">Fighter</option>
+                <option value="Cleric">Cleric</option>
+                <option value="Druid">Druid</option>
+                <option value="Monk">Monk</option>
+                <option value="Paladin">Paladin</option>
+                <option value="Ranger">Ranger</option>
+                <option value="Rouge">Rouge</option>
+                <option value="Sorcerer">Sorcerer</option>
+                <option value="Wizard">Wizard</option>
+              </select>
+              <div class="column">
+                <label for="level">Level</label>
+                <input class="header-input level" name="level" type="text">
+              </div>
+              <div class="column">
+                <label for="align">Alignment</label>
+                <input class="header-input align" name="align" type="text">
+              </div>
             </div>
             <div class="stats">
 
