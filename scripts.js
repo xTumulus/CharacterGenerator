@@ -1,40 +1,31 @@
-let defStr;
-let defDex;
-let defCon;
-let defIntl;
-let defWis;
-let defCha;
+const defStr;
+const defDex;
+const defCon;
+const defIntl;
+const defWis;
+const defCha;
+
+var str = document.getElementById('str');
+var dex = document.getElementById('dex');
+var con = document.getElementById('con');
+var intl = document.getElementById('intl');
+var wis = document.getElementById('wis');
+var cha = document.getElementById('cha');
 
 function abilityGen() {
-  var str = document.getElementById('str');
-  var dex = document.getElementById('dex');
-  var con = document.getElementById('con');
-  var intl = document.getElementById('intl');
-  var wis = document.getElementById('wis');
-  var cha = document.getElementById('cha');
-
-  str.value = Math.floor(Math.random() * 14) + 5;
-  dex.value = Math.floor(Math.random() * 14) + 5;
-  con.value = Math.floor(Math.random() * 14) + 5;
-  intl.value = Math.floor(Math.random() * 14) + 5;
-  wis.value = Math.floor(Math.random() * 14) + 5;
-  cha.value = Math.floor(Math.random() * 14) + 5;
-
-  defStr = str.value;
-  defDex = dex.value;
-  defCon = con.value;
-  defIntl = intl.value;
-  defWis = wis.value;
-  defCha = cha.value;
-}
-
-function setToDefault() {
-  str.value = defStr;
-  dex.value = defDex;
-  con.value = defCon;
-  intl.value = defIntl;
-  wis.value = defWis;
-  cha.value = defCha;
+  baseStr = Math.floor(Math.random() * 14) + 5;
+  baseDex = Math.floor(Math.random() * 14) + 5;
+  baseCon = Math.floor(Math.random() * 14) + 5;
+  baseIntl = Math.floor(Math.random() * 14) + 5;
+  baseWis = Math.floor(Math.random() * 14) + 5;
+  baseCha = Math.floor(Math.random() * 14) + 5;
+  
+  str.value = baseStr;
+  dex.value = baseDex;
+  con.value = baseCon;
+  intl.value = baseIntl;
+  wis.value = baseWis;
+  cha.value = baseCha;
 }
 
 function onSelectRace() {
@@ -67,6 +58,54 @@ function onSelectRace() {
   }
   if(race === 'Human') {
     //no modifier change
+  }
+}
+
+function getModifiers(value)
+{
+  if(value === 1)
+  {
+    return -5;
+  }
+  else if(value <= 3)
+  {
+    return -4;
+  }
+  else if(value <= 5)
+  {
+    return -3;
+  }
+  else if(value <= 7)
+  {
+    return -2;
+  }
+  else if(value <= 9)
+  {
+    return -1;
+  }
+  else if(value <= 11)
+  {
+    return 0;
+  }
+  else if(value <= 13)
+  {
+    return 1;
+  }
+  else if(value <= 15)
+  {
+    return 2;
+  }
+  else if(value <= 17)
+  {
+    return 3;
+  }
+  else if(value <= 19)
+  {
+    return 4;
+  }
+  else if(value === 20)
+  {
+    return 5;
   }
 }
 
