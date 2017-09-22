@@ -81,6 +81,10 @@ select {
   color: black;
 }
 
+.title {
+  margin-bottom: 0px;
+}
+
 .header-img {
   height: 98px;
   margin-left: 2%;
@@ -110,24 +114,28 @@ select {
 }
 
 .sheet-header {
-
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .player-stats {
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .main-stats {
   border: 3px solid black;
-  width: 30%;
+  height: 170px;
+  width: 152px;
   margin-top: 20px;
   margin-bottom: 20px;
+  padding: 8px;
 }
 
 .hp-ac {
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: -90px;
+  /*margin-left: -90px;*/
   font-size: .8em;
 }
 
