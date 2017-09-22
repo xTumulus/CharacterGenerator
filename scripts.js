@@ -1,3 +1,42 @@
+function onSelectRace() {
+  let race = document.getElementById('race').value;
+  let str = document.getElementById('id').value;
+  let dex = document.getElementById('id').value;
+  let con = document.getElementById('id').value;
+  let intl = document.getElementById('id').value;
+  let wis = document.getElementById('id').value;
+  let cha = document.getElementById('id').value;
+
+  // setToDefault();
+  if(race === 'Dwarf') {
+    con += 2;
+    cha -= 2;
+  }
+  if(race === 'Elf') {
+    dex += 2;
+    con -= 2;
+  }
+  if(race === 'Gnome') {
+    con += 2;
+    str -= 2;
+  }
+  if(race === 'Half-Elf') {
+    //no modifier change
+  }
+  if(race === 'Half-Orc') {
+    str += 2;
+    cha -= 2;
+    intl -= 2;
+  }
+  if(race === 'Halfling') {
+    dex += 2;
+    str -= 2;
+  }
+  if(race === 'Human') {
+    //no modifier change
+  }
+}
+
 function onChangeHP() {
   let barWidth;
   let barColor;
