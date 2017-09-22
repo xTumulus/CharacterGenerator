@@ -4,7 +4,7 @@
         <script type="text/javascript" src="scripts.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Bilbo|Trade+Winds" rel="stylesheet">
     </head>
-    <body>
+    <body onload="abilityGen()">
       <div class="column">
         <div class="page-header row">
           <img class="header-img" src="./assets/dragon.png" alt="dragon silhouette" height="50px">
@@ -51,7 +51,7 @@
               </div>
             </div>
             <div class="row player-stats">
-              <div class="main-stats" onload="abilityGen()">
+              <div class="main-stats">
                 <table>
                   <tr>
                     <th>Ability</th>
@@ -60,32 +60,32 @@
                   </tr>
                   <tr>
                     <td>STR</td>
-                    <td><div id="str" class="box">0</div></td>
+                    <td><input type="number" id="str" class="ability" value="0"></td>
                     <td><div id="str-bonus" class="box">0</div></td>
                   </tr>
                   <tr>
                     <td>DEX</td>
-                    <td><div id="dex" class="box">0</div></td>
+                    <td><input type="number" id="dex" class="ability" value="0"></td>
                     <td><div id="dex-bonus" class="box">0</div></td>
                   </tr>
                   <tr>
                     <td>CON</td>
-                    <td><div id="con" class="box">0</div></td>
+                    <td><input type="number" id="con" class="ability" value="0"></td>
                     <td><div id="con-bonus" class="box">0</div></td>
                   </tr>
                   <tr>
                     <td>INT</td>
-                    <td><div id="intl" class="box">0</div></td>
+                    <td><input type="number" id="intl" class="ability" value="0"></td>
                     <td><div id="intl-bonus" class="box">0</div></td>
                   </tr>
                   <tr>
                     <td>WIS</td>
-                    <td><div id="wis" class="box">0</div></td>
+                    <td><input type="number" id="wis" class="ability" value="0"></td>
                     <td><div id="wis-bonus" class="box">0</div></td>
                   </tr>
                   <tr>
                     <td>CHA</td>
-                    <td><div id="cha" class="box">0</div></td>
+                    <td><input type="number" id="cha" class="ability" value="0"></td>
                     <td><div id="cha-bonus" class="box">0</div></td>
                   </tr>
                 </table>
@@ -95,9 +95,9 @@
                   <label for="ac" class="primary">AC</label>
                   <input class="stat ac" type="text" name="ac">
                   <label for="max-hp" class="primary">Max HP</label>
-                  <input class="hp-stat" id="max-hp" type="number" name="max-hp" onkeyup="onChangeHP()">
+                  <input class="hp-stat" id="max-hp" type="number" name="max-hp" onkeyup="onChangeHP()" onclick="onChangeHP()">
                   <label for="hp" class="primary">HP</label>
-                  <input class="hp-stat" id="hp" type="number" name="hp" onkeyup="onChangeHP()">
+                  <input class="hp-stat" id="hp" type="number" name="hp" onkeyup="onChangeHP()" onclick="onChangeHP()">
                   <div class="hp-bar-container">
                     <div class="hp-bar" id="hp-bar"></div>
                   </div>

@@ -37,6 +37,12 @@ body {
   border: 1px solid black;
 }
 
+.ability {
+  width: 45px;
+  height: 20px;
+  margin-right: 10px;
+}
+
 .hp-stat {
   width: 45px;
   height: 20px;

@@ -5,36 +5,36 @@ let defIntl;
 let defWis;
 let defCha;
 
-let str = document.getElementById('str');
-let dex = document.getElementById('dex');
-let con = document.getElementById('con');
-let intl = document.getElementById('intl');
-let wis = document.getElementById('wis');
-let cha = document.getElementById('cha');
-
 function abilityGen() {
-  str.innerHTML = Math.floor(Math.random() * 19);
-  dex.innerHTML = Math.floor(Math.random() * 19);
-  con.innerHTML = Math.floor(Math.random() * 19);
-  intl.innerHTML = Math.floor(Math.random() * 19);
-  wis.innerHTML = Math.floor(Math.random() * 19);
-  cha.innerHTML = Math.floor(Math.random() * 19);
+  var str = document.getElementById('str');
+  var dex = document.getElementById('dex');
+  var con = document.getElementById('con');
+  var intl = document.getElementById('intl');
+  var wis = document.getElementById('wis');
+  var cha = document.getElementById('cha');
 
-  defStr = str.innerHTML;
-  defDex = dex.innerHTML;
-  defCon = con.innerHTML;
-  defIntl = intl.innerHTML;
-  defWis = wis.innerHTML;
-  defCha = cha.innerHTML;
+  str.value = Math.floor(Math.random() * 14) + 5;
+  dex.value = Math.floor(Math.random() * 14) + 5;
+  con.value = Math.floor(Math.random() * 14) + 5;
+  intl.value = Math.floor(Math.random() * 14) + 5;
+  wis.value = Math.floor(Math.random() * 14) + 5;
+  cha.value = Math.floor(Math.random() * 14) + 5;
+
+  defStr = str.value;
+  defDex = dex.value;
+  defCon = con.value;
+  defIntl = intl.value;
+  defWis = wis.value;
+  defCha = cha.value;
 }
 
 function setToDefault() {
-  str.innerHTML = defStr;
-  dex.innerHTML = defDex;
-  con.innerHTML = defCon;
-  intl.innerHTML = defIntl;
-  wis.innerHTML = defWis;
-  cha.innerHTML = defCha;
+  str.value = defStr;
+  dex.value = defDex;
+  con.value = defCon;
+  intl.value = defIntl;
+  wis.value = defWis;
+  cha.value = defCha;
 }
 
 function onSelectRace() {
