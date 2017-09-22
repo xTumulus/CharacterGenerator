@@ -25,6 +25,18 @@ body {
   margin-right: 10px;
 }
 
+.box {
+  height: 30px;
+  font-weight: bold;
+  padding: -5px;
+  font-size: 1.7em;
+  width: 35px;
+  text-align: center;
+  margin: 5px;
+  margin-bottom: 0px;
+  border: 1px solid black;
+}
+
 .hp-stat {
   width: 45px;
   height: 20px;

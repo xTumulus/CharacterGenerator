@@ -1,13 +1,46 @@
+let defStr;
+let defDex;
+let defCon;
+let defIntl;
+let defWis;
+let defCha;
+
+let str = document.getElementById('str');
+let dex = document.getElementById('dex');
+let con = document.getElementById('con');
+let intl = document.getElementById('intl');
+let wis = document.getElementById('wis');
+let cha = document.getElementById('cha');
+
+function abilityGen() {
+  str.innerHTML = Math.floor(Math.random() * 19);
+  dex.innerHTML = Math.floor(Math.random() * 19);
+  con.innerHTML = Math.floor(Math.random() * 19);
+  intl.innerHTML = Math.floor(Math.random() * 19);
+  wis.innerHTML = Math.floor(Math.random() * 19);
+  cha.innerHTML = Math.floor(Math.random() * 19);
+
+  defStr = str.innerHTML;
+  defDex = dex.innerHTML;
+  defCon = con.innerHTML;
+  defIntl = intl.innerHTML;
+  defWis = wis.innerHTML;
+  defCha = cha.innerHTML;
+}
+
+function setToDefault() {
+  str.innerHTML = defStr;
+  dex.innerHTML = defDex;
+  con.innerHTML = defCon;
+  intl.innerHTML = defIntl;
+  wis.innerHTML = defWis;
+  cha.innerHTML = defCha;
+}
+
 function onSelectRace() {
   let race = document.getElementById('race').value;
-  let str = document.getElementById('id').value;
-  let dex = document.getElementById('id').value;
-  let con = document.getElementById('id').value;
-  let intl = document.getElementById('id').value;
-  let wis = document.getElementById('id').value;
-  let cha = document.getElementById('id').value;
 
-  // setToDefault();
+  setToDefault();
   if(race === 'Dwarf') {
     con += 2;
     cha -= 2;
@@ -121,4 +154,3 @@ function addRanged(){
   weigthCell.innerHTML = "<input type=\"text\" name=\"Weigth\" placeholder=\"0\" class=\"stat\">";
   ammoCell.innerHTML = "<input type=\"text\" name=\"Ammo\" placeholder=\"0\" class=\"stat\">";
 }
-
