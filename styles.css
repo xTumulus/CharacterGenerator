@@ -138,24 +138,28 @@ select {
   width: 100px;
 }
 .inventory{
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .items{
   border: 3px solid black;
   padding: 8px;
+  margin-right: 15px;
   max-height: 280px;
   overflow: auto;
 }
 .items-header{
   position: sticky;
 }
-.weapons-header{
-  position: sticky;
-}
+
 .weapons{
   border: 3px solid black;
   padding: 8px;
+  margin-left: 15px;
   max-height: 280px;
   overflow: auto;
+}
+.weapons-header{
+  position: sticky;
 }
