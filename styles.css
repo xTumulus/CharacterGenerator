@@ -137,7 +137,25 @@ select {
 .skill {
   width: 100px;
 }
+.inventory{
+  justify-content: space-between;
+}
 
 .items{
   border: 3px solid black;
+  padding: 8px;
+  max-height: 280px;
+  overflow: auto;
+}
+.items-header{
+  position: sticky;
+}
+.weapons-header{
+  position: sticky;
+}
+.weapons{
+  border: 3px solid black;
+  padding: 8px;
+  max-height: 280px;
+  overflow: auto;
 }

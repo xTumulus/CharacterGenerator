@@ -1,3 +1,4 @@
+
 function onChangeHP() {
   let barWidth;
   let barColor;
@@ -43,3 +44,43 @@ function onChangeHP() {
 //         return '#3a8d24';
 //     }
 // });
+
+function addItemFunction() {
+  var  items = document.getElementById('itemTable');
+  var row = items.insertRow(1);
+  var nameCell = row.insertCell(0);
+  var weigthCell = row.insertCell(1);
+  var quantityCell = row.insertCell(2);
+  nameCell.innerHTML = "<input type=\"text\" name=\"item name\" placeholder=\"Name\">";
+  weigthCell.innerHTML = "<input type=\"text\" name=\"Weigth\" placeholder=\"0\" class=\"stat\">";
+  quantityCell.innerHTML = "<input type=\"text\" name=\"Quantity\" placeholder=\"1\" class=\"stat\">";
+}
+
+function addMelee(){
+  var  items = document.getElementById('weaponTable');
+  var row = items.insertRow(1);
+  var nameCell = row.insertCell(0);
+  var bonusCell = row.insertCell(1);
+  var damageCell = row.insertCell(2)
+  var weigthCell = row.insertCell(3);
+  nameCell.innerHTML = "<input type=\"text\" name=\"item name\" placeholder=\"Weapon\">";
+  bonusCell.innerHTML = "<input type=\"text\" name=\"Bonus\" placeholder=\"0\" class=\"stat\">";
+  damageCell.innerHTML = "<input type=\"text\" name=\"Damage\" placeholder=\"0\" class=\"stat\">";
+  weigthCell.innerHTML = "<input type=\"text\" name=\"Weigth\" placeholder=\"0\" class=\"stat\">";
+}
+
+function addRanged(){
+  var  items = document.getElementById('weaponTable');
+  var row = items.insertRow(1);
+  var nameCell = row.insertCell(0);
+  var bonusCell = row.insertCell(1);
+  var damageCell = row.insertCell(2)
+  var weigthCell = row.insertCell(3);
+  var ammoCell = row.insertCell(4);
+  nameCell.innerHTML = "<input type=\"text\" name=\"item name\" placeholder=\"Weapon\">";
+  bonusCell.innerHTML = "<input type=\"text\" name=\"Bonus\" placeholder=\"0\" class=\"stat\">";
+  damageCell.innerHTML = "<input type=\"text\" name=\"Damage\" placeholder=\"0\" class=\"stat\">";
+  weigthCell.innerHTML = "<input type=\"text\" name=\"Weigth\" placeholder=\"0\" class=\"stat\">";
+  ammoCell.innerHTML = "<input type=\"text\" name=\"Ammo\" placeholder=\"0\" class=\"stat\">";
+}
+
